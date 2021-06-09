@@ -16,7 +16,7 @@ public class BankInterestCalculator {
 		
 		System.out.println(proxy.getClass()+" ....  "+proxy.getClass().getSuperclass()+" ....  "+Arrays.toString(proxy.getClass().getInterfaces()));
 		
-		System.out.println("Simple Interest :: "+ proxy.simpleInterest(500000, 5, 2));
+		System.out.println("Simple Interest :: "+ proxy.simpleInterest(300000, 5, 2));
 		
 
 	}

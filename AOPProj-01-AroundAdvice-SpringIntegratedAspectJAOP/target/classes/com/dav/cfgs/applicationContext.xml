@@ -16,11 +16,11 @@
 <aop:config>
 	
 	<!-- pointcut -->
-	<aop:pointcut expression="execution(double com.dav.bank.IBank.*(..))" id="ptc"/>
+	<!--  <aop:pointcut expression="execution(double com.dav.bank.IBank.*(..))" id="ptc"/> -->
 	
 	<!-- making spring bean class as AspectJAOP Aspect classes -->
 	<aop:aspect ref="interestAdvice">
-		<aop:around method="interestAdvice" pointcut-ref="ptc"/>
+		<aop:around method="interestAdvice" pointcut="execution(double com.dav.bank.IBank.*(..))"/>
 	</aop:aspect>
 	
 </aop:config>

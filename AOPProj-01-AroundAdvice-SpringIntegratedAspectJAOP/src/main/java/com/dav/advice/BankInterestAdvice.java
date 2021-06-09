@@ -13,7 +13,7 @@ public class BankInterestAdvice {
 			args[1] = 2;
 		else args[1]=3;
 		
-		//call the Business method
+		//call the Business method or invoking the Buisness the method !
 		Object retVal = pjp.proceed(args);
 		
 		//post logic
